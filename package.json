@@ -1,0 +1,28 @@
+{
+  "name": "js-algos",
+  "version": "1.0.0",
+  "description": "Javascript Algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkat7668/JS-Algos.git"
+  },
+  "keywords": [
+    "venkat7668",
+    "javascript",
+    "algorithms"
+  ],
+  "author": "venkat7668",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkat7668/JS-Algos/issues"
+  },
+  "homepage": "https://github.com/venkat7668/JS-Algos#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
