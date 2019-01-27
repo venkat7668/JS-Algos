@@ -1,3 +1,10 @@
+
+/*
+  This algorithm finds 3 elements in given array that are equals to given sum
+
+  @arr: Sorted Array
+  @sum: Integer
+*/
 exports.threeNumbersSum = function (arr, sum) {
     const len = arr.length;
     for (let i = 0; i < len; i++) {

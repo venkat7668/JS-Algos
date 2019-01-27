@@ -7,6 +7,8 @@ const removeDuplicatesWithSet = require('./remove-duplicates').removeDuplicatesW
 const twoNumbersSum = require('./two-numbers-sum').twoNumbersSum;
 const threeNumbersSum = require('./three-numbers-sum').threeNumbersSum
 
+const findMinDiffTwoArraysElements = require('./find-min-diff-two-arrays').findMinDifTwoArraysElements
+
 describe('Array: Remove duplicates', () => {
     it('Should return array', () => {
         const result = removeDuplicates([1, 2, 3, 4, 5, 4, 3]);
@@ -55,3 +57,14 @@ describe("Array: Three Numbers Sum", () => {
     })
 })
 
+describe("Array: Find minium difference between two arrays", () => {
+    it("should return number as a result", () => {
+        const result = findMinDiffTwoArraysElements([12, 32, 41, 52, 75, 95], [9, 12, 45, 79, 99, 102]);
+        assert.isNumber(result)
+    })
+
+    it("should return min [Zero] diffrence of the arrays elements", () => {
+        const result = findMinDiffTwoArraysElements([1, 12, 23, 34, 45], [22]);
+        assert.equal(1, result);
+    })
+});
