@@ -11,7 +11,7 @@ exports.rearrangeArrayItems = function (arr) {
     const half = len / 2 >> 0; //floor in case of dismal values
 
     while (i < half || j > half) {
-        if (i != j) { // last item appears twise in result
+        if (i != j) { // last item appears twice in result
             result.push(arr[i]);
             result.push(arr[j]);
         }
