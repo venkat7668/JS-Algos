@@ -11,4 +11,4 @@ exports.bubbleSort = function (arr) {
     return arr;
 }
 
-console.log(bubbleSort([1, 2, 3, 5, 1, 9, 4]))
+console.log(exports.bubbleSort([1, 2, 3, 5, 1, 9, 4]))
