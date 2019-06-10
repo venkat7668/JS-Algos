@@ -1,30 +1,18 @@
-function convertIntToRomanNum(str) {
-    let num = numMap(str.charAt(0));
-
-    for (let i = 1; i < str.length; i++) {
-        let cur = numMap(str.charAt(i)),
-            prev = numMap(str.charAt(i - 1));
-
-        if (prev >= cur) {
-            num += cur;
+function convertIntToRomanNum(val) {
+    let numerals = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+    let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    let numeral = '';
+    let i = 0;
+    while (val > 0) {
+        if (val - values[i] >= 0) {
+            numeral += numerals[i];
+            val -= values[i];
         } else {
-            num = num + cur - 2 * prev;
+            i++
         }
     }
+    return numeral;
 
-    return num;
-}
-function numMap(char) {
-    const map = {
-        i: 1,
-        V: 5,
-        x: 10,
-        l: 50,
-        c: 100,
-        d: 500,
-        m: 1000
-    }
-    return map[char];
 }
 
-console.log(convertIntToRomanNum('xx'))
+console.log(convertIntToRomanNum(205))
