@@ -22,11 +22,11 @@ function getCounterPrantheses(char) {
 }
 
 function isPrantheses(char) {
-    return /[\}\{\)\(\]\[]/.test(char);
+    return /[{}[\]()]/.test(char);
 }
 
 function isOpenPerantheses(char) {
     return /[[{(]/.test(char);
 }
 
-console.log(isBalacedPrantheses("[()()()]()"))
+console.log(isBalacedPrantheses("[()()()]({})"))

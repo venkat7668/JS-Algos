@@ -11,7 +11,7 @@ function findElsEqSum(arr, n, sum, r = []) {
         return r;
     }
 
-    if (n == 0) {
+    if (n == 0 && sum < 0) {
         return;
     }
 

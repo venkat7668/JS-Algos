@@ -12,9 +12,7 @@ function print$AtLevelEnd(root) {
             node.left && queue.push(node.left);
             node.right && queue.push(node.right);
             console.log(node.data);
-            if (n - 1 == i) {
-                console.log("$");
-            }
         }
+        console.log("$")
     }
 }

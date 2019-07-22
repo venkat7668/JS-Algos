@@ -1,16 +1,12 @@
-function mergeSortArrays(arrs, result) {
-    if (!result && arrs.length) {
-        result = arrs.splice(0, 1)[0];
+function mergeSortArrays(arrs) {
+
+    if (arrs.length == 1) {
+        //base case #1: length == 1 return first array
+        return arrs.shift()
     }
 
-    if (!arrs.length) {
-        return result;
-    }
+    return merge(arrs.shift(), mergeSortArrays(arrs));
 
-    let ar = arrs.splice(0, 1)[0];
-    let mergedArr = merge(result, ar)
-
-    return mergeSortArrays(arrs, mergedArr);
 }
 
 function merge(arr1, arr2) {
@@ -29,4 +25,4 @@ function merge(arr1, arr2) {
     return result.concat(arr1.slice(i)).concat(arr2.slice(j));
 }
 
-console.log(mergeSortArrays([[1, 2, 3, 7], [4, 5, 6, 20], [4, 5, 6, 7, 8, 9, 10]]));
+console.log(mergeSortArrays([[1, 2, 3, 7], [4, 5, 6, 20], [4, 5, 6, 7, 8, 9, 10], [0, 1], [-1, 21]]));

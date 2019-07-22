@@ -4,6 +4,7 @@
  * @create date 2019-06-10 11:47:07
  * @modify date 2019-06-10 11:47:07
  * @desc find x index in given sorted array
+ *       Time complexity O(logn)
  */
 
 exports.binarySearch = function (arr, x) {

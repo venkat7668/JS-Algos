@@ -6,7 +6,7 @@ In the given matrix, every row and column is sorted in increasing order. The des
 
 exports.search_sorted_matrix = function (matrix, x) {
     let row = 0;
-    let column = matrix[row].length;
+    let column = matrix[row].length - 1;
     const len = matrix.length;
 
     while (row < len && column > 0) {

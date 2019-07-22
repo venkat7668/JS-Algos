@@ -1,13 +1,11 @@
-function rotateMatrixClockWise(matrix) {
+function rotateMatrixClockwise(matrix){
     let result = [];
-    let lastIndex = matrix.length;
-    for (let i = 0; i <= lastIndex; i++) {
-        result.push(matrix.map(ar => ar[lastIndex - i]));
+    let lastIndex = matrix.length -1;
+    for(let i = lastIndex; i>=0; i--){
+        result.push(matrix.map(ar=>ar[lastIndex - i]))
     }
-
-    return result;
+    return result
 }
-
-console.log(rotateMatrixClockWise([[1,2,3],
-                                   [4,5,6],
-                                   [7,8,9]]));
+console.log(rotateMatrixClockwise([[1,2,3],
+    [4,5,6],
+    [7,8,9]]));
