@@ -1,4 +1,9 @@
 /*
+ * @Author: Venkat Lankalapalli 
+ * @Date: 2019-11-26 15:42:36 
+ * @Last Modified by:   Venkat Lankalapalli 
+ * @Last Modified time: 2019-11-26 15:42:36 
+ * 
  * @param arr1 sorted array
  * @param arr2 sorted array
  * return array of common elements in both arrays

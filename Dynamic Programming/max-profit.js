@@ -1,3 +1,10 @@
+/*
+ * @Author: Venkat Lankalapalli 
+ * @Date: 2019-11-26 15:45:33 
+ * @Last Modified by:   Venkat Lankalapalli 
+ * @Last Modified time: 2019-11-26 15:45:33 
+ */
+
 function maxProfit(arr) {
     if (!arr.length) {
         return 0;

@@ -1,8 +1,8 @@
 /*
  * @Author: Venkat Lankalapalli
  * @Date: 2019-11-25 11:17:11 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2019-11-25 11:21:33
+ * @Last Modified by: Venkat Lankalapalli
+ * @Last Modified time: 2019-11-26 15:41:54
  * @disc: Detect given string can form a palindrome string
  * @Alogo: Count odd chars in a string, if odd chars are more than one.
  *         That string can't maka a palindrom

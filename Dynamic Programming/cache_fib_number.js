@@ -1,8 +1,13 @@
 /*
-* Fibonacci number series
-* Time Complexity : O(2^N)
-* Space Complexity: O(N)
-*/
+ * @Author: Venkat Lankalapalli 
+ * @Date: 2019-11-26 15:43:46 
+ * @Last Modified by: Venkat Lankalapalli
+ * @Last Modified time: 2019-11-26 15:44:11
+ * 
+ * Fibonacci number series
+ * Time Complexity : O(2^N)
+ * Space Complexity: O(N)
+ */
 
 function fib(n) {
     if (n <= 1) {

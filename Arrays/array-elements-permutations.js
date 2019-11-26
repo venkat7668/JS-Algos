@@ -1,3 +1,10 @@
+/*
+ * @Author: Venkat Lankalapalli 
+ * @Date: 2019-11-26 15:42:23 
+ * @Last Modified by:   Venkat Lankalapalli 
+ * @Last Modified time: 2019-11-26 15:42:23 
+ */
+
 function permutations(arr, result=[]) {
     if (!arr.length) {
         console.log(result)
