@@ -20,9 +20,9 @@ function findDiff(arr1, arr2, target) {
     let size = arr1.length;
     for (let i = 0; i < size; i++) {
         let dif = arr1[i] - target;
-        console.log(arr1[i], target)
+        //console.log(arr1[i], target)
         if (arr2Obj[dif]) {
-            console.log(dif, arr1[i])
+            //console.log(dif, arr1[i])
             return [dif, arr1[i]];
         }
     }

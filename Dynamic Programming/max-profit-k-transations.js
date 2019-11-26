@@ -1,24 +1,23 @@
 function maxProfitKtransations(prices, k) {
-    let profit = [];
-    let n = prices.length;
+    if (!prices.length) return 0;
 
-    for (let t = 0; t <= k; t++) {
-        profit[t] = [0]
+    const profits = [];
 
-    }
-    
-    for (let d = 0; d < n; d++) {
-        profit[0][d] = 0
+    for (let t = 0; t < k + 1; t++) {
+        let row = new Array(prices.length).fill(0);
+        profits.push(row);
     }
 
-    for (let t = 1; t <= k; t++) {
-        let cur_dif = Number.MIN_VALUE;
-        for (let d = 1; d < n; d++) {
-            cur_dif = Math.max(cur_dif, profit[t - 1][d - 1] - prices[d - 1]);
-            profit[t][d] = Math.max(profit[t][d - 1], prices[d] + cur_dif)
+    for (let t = 1; t < k + 1; t++) {
+        let maxThusFar = -Infinity;
+        for (let d = 1; d < prices.length; d++) {
+            maxThusFar = Math.max(maxThusFar, profits[t - 1][d - 1] - prices[d - 1]);
+            console.log(maxThusFar)
+            profits[t][d] = Math.max(profits[t][d - 1], maxThusFar + prices[d]);
         }
     }
 
-    return profit[k][n - 1]
+    return profits[k][prices.length - 1]
 }
-console.log(maxProfitKtransations([12, 14, 17, 10, 14, 13, 12, 15], 3))
+
+console.log(maxProfitKtransations([5, 11, 3, 50, 40, 90], 2));

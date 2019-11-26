@@ -30,4 +30,4 @@ function findSubArrEqSum(arr, sum) {
 
 }
 
-console.log(findSubArrEqSum([2, 3, 4, 9, 10], 15));
+console.log(findSubArrEqSum([2, 3, 4, 9, 10], 23));

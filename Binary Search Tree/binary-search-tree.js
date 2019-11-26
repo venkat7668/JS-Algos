@@ -38,7 +38,7 @@ class BST {
         const child = root.data < val ? "right" : "left";
 
         if (root[child]) {
-            return this.find(root[child], val)
+            return this.find(val, root[child])
         } else {
             throw new Error(`value: ${val} not found in BST`);
         }
