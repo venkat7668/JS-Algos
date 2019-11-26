@@ -1,8 +1,8 @@
 /*
- * @Author: mikey.zhaopeng 
+ * @Author: Venkat Lankalapalli 
  * @Date: 2019-11-22 16:39:36 
  * @Last Modified by: Venkat Lankalapalli
- * @Last Modified time: 2019-11-26 15:41:37
+ * @Last Modified time: 2019-11-26 15:47:04
  * https://en.wikipedia.org/wiki/Reverse_Polish_notation
  */
 function reversePolishNotation(arr) {

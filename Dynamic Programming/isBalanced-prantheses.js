@@ -1,3 +1,10 @@
+/*
+ * @Author: Venkat Lankalapalli 
+ * @Date: 2019-11-26 15:44:58 
+ * @Last Modified by: Venkat Lankalapalli
+ * @Last Modified time: 2019-11-26 15:46:45
+ */
+
 function isBalacedPrantheses(str) {
     const strAr = str.split('');
     let stack = [];
