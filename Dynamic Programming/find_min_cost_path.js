@@ -1,7 +1,7 @@
 /*
  * @Author: Venkat Lankalapalli
  * @Date: 2019-11-26 14:37:30 
- * @Last Modified by: mikey.zhaopeng
+ * @Last Modified by: Venkat Lankalapalli
  * @Last Modified time: 2019-11-26 15:03:00
  * @Disc: Given matrix, find a minimum cost path to reach bottom right corner, from top left corner.
  */
