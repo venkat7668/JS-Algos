@@ -1,8 +1,8 @@
 /*
  * @Author: Venkat Lankalapalli 
  * @Date: 2021-03-01 08:52:32 
- * @Last Modified by:   Venkat Lankalapalli 
- * @Last Modified time: 2021-03-01 08:52:32 
+ * @Last Modified by: Venkat Lankalapalli
+ * @Last Modified time: 2021-03-01 11:30:07
  */
 
 function stringLeftPad(str, len, char = "*") {
@@ -17,4 +17,5 @@ function stringLeftPad(str, len, char = "*") {
     return str;
 }
 
-console.log(stringLeftPad("venkat", 10))
+console.log(stringLeftPad("venkat", 10, '-'))
+//output : ----venkat
