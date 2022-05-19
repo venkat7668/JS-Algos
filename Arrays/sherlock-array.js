@@ -24,6 +24,7 @@ function findElementBetweenEqualSumElements(arr) {
         }
         count += arr[i]
     }
+    return -1
 }
 
 function sum(arr) {

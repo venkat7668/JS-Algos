@@ -1,3 +1,6 @@
+/*
+ * Description: Given array is missing two random numbers in between 1 to n 
+ */
 function getMissingTwoNums(arr) {
     let size = arr.length + 2;
     let actualTotal = size * (size + 1)/ 2;

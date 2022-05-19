@@ -17,7 +17,7 @@ function getChange(amount, coins) {
         result[coins[i]] = Math.floor(iCoins);
         amount %= coins[i];
 
-        if(!amount) break;
+        if(amount == 0) break;
     }
     return result;
 }
