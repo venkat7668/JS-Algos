@@ -6,8 +6,8 @@ const BFS = function (root) {
         const node = queue.pop();
         result.push(node.data);
 
-        root.left && queue.push(root.left);
-        root.right && queue.push(root.right)
+        node.left && queue.push(node.left);
+        node.right && queue.push(node.right)
     }
 
     return result;

@@ -9,15 +9,14 @@
  */
 
 function maxSubArraySum(arr) {
-    let ans = arr[0];
-    let sum = arr[0];
-    for (let i = 1; i < arr.length; i++) {
-        ans = Math.max(arr[i], ans + arr[i]);
-        sum = Math.max(ans, sum)
-        console.log(ans, sum);
+    let cur_sum = 0;
+    let best_sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        cur_sum = Math.max(0, cur_sum + arr[i]);
+        best_sum = Math.max(cur_sum, best_sum);
     }
 
-    return sum;
+    return best_sum;
 }
 
 console.log(maxSubArraySum([1,3,-4,1,4,-2]))

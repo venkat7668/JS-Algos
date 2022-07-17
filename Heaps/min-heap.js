@@ -3,6 +3,10 @@ class MinHeap {
         this.data = [];
     }
 
+    size(){
+        return this.data.length
+    }
+
     insert(num) {
         this.data.push(num);
         this.bubbleUp(this.data.length - 1);

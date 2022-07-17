@@ -10,6 +10,11 @@
  * Input: nums1 = [1,2], nums2 = [3,4]
  * Output: 2.50000
  * Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+ * 
+ * Optimal solution could be
+ * We dont need entire array to sort, track only middle elements
+ * to culculate the mean. Which can be done in O(log (m+n))
+ * [1,2,3,4,6,7],[2]
  */
 var findMedianSortedArrays = function (nums1, nums2) {
     let i = 0
@@ -33,3 +38,5 @@ var findMedianSortedArrays = function (nums1, nums2) {
     }
     return m1
 };
+
+console.log(findMedianSortedArrays([1, 2, 3, 4, 5, 6, 7], [2]))

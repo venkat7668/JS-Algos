@@ -18,28 +18,28 @@
  *               \/     \/     \/     \/     \/       
  */
 
-function findIntersectionNode (head1, head2){
+function findIntersectionNode(head1, head2) {
     const n1Len = getLength(head1);
     const n2Len = getLength(head2);
     let longList, shortList, diff, intersectionNode = null;
 
-    if(n1Len > n2Len){
+    if (n1Len > n2Len) {
         longList = head1;
         shortList = head2;
         diff = n1Len - n2Len;
-    }else {
+    } else {
         longList = head2;
         shortList = head1;
         diff = n2Len - n1Len;
     }
 
-    while(diff > 0){
+    while (diff > 0) {
         longList = longList.next;
         diff--;
     }
 
-    while(longList.next && shortList.next){
-        if(longList.next == shortList.next){
+    while (longList.next && shortList.next) {
+        if (longList.next == shortList.next) {
             intersectionNode = longList.next;
             return
         }
@@ -47,9 +47,9 @@ function findIntersectionNode (head1, head2){
     return intersectionNode
 }
 
-function getLength(node){
+function getLength(node) {
     let count = 0;
-    while(node.next){
+    while (node.next) {
         count++
     }
     return count

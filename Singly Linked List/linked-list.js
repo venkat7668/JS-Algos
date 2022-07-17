@@ -79,7 +79,7 @@ class LinkedList {
         } else if (index == this.size) {
             return this.tail;
         } else {
-            let node = this.root;
+            let node = this.head;
             let count = 1;
             while (count != index) {
                 node = node.next;
