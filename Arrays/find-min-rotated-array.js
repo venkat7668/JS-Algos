@@ -14,7 +14,7 @@ function findMin(arr) {
     let mid;
 
     while (low < high) {
-        mid = Math.floor(low + (high - low) / 2);
+        mid = Math.floor(low + (high - low) / 2); // Math.floor((high+low)/2)
         if (arr[mid] < arr[high]) {
             high = mid
         } else {

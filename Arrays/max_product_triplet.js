@@ -3,8 +3,8 @@ function maxProductTriplet(arr) {
     let maxB = Number.MIN_VALUE;
     let maxC = Number.MIN_VALUE;
 
-    let minA = Number.MIN_VALUE;
-    let minB = Number.MIN_VALUE;
+    let minA = Number.MAX_VALUE;
+    let minB = Number.MAX_VALUE;
 
     let len = arr.length;
     while (len) {
