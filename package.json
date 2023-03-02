@@ -23,6 +23,6 @@
   "homepage": "https://github.com/venkat7668/JS-Algos#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^10.2.0"
   }
 }
